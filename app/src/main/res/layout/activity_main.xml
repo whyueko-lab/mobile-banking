@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/btnLog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:backgroundTintMode="screen"
+        android:onClick="@string/material_motion_easing_emphasized"
+        android:text="Push Login"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnIntent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Push Intent"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnMath"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Push Math"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btnDec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Push Decision"
+        android:textAlignment="center"/>
+
+</LinearLayout>

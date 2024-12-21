@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent">
+    <EditText
+        android:id="@+id/inputPanjang"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Panjang"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/inputLebar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Lebar"
+        android:inputType="number" />
+    <Button
+        android:id="@+id/persegiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Persegi"/>
+    <Button
+        android:id="@+id/segitigaButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Segitiga"/>
+    <Button
+        android:id="@+id/lingkaranButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lingkaran"/>
+    <TextView
+        android:id="@+id/displayTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="Your input will appear here"
+        android:textSize="50dp"/>
+</LinearLayout>
