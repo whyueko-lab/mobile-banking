@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    android:background="@drawable/home"
-    tools:context="com.example.mobilebanking_wahyu_eko_suroso_411222044.MainActivity">
+    android:background="@drawable/mycard">
 
     <!-- Space untuk mendorong konten ke atas -->
     <Space
@@ -30,32 +27,32 @@
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Home"
-            android:backgroundTint="@android:color/background_light" />
+            android:backgroundTint="@android:color/background_light"
+            android:text="Home" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mycardBtn"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="My Card"
-            android:backgroundTint="@android:color/background_light" />
+            android:backgroundTint="@android:color/background_light"
+            android:text="My Card" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/statistikBtn"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Statistik"
-            android:backgroundTint="@android:color/background_light" />
+            android:backgroundTint="@android:color/background_light"
+            android:text="Statistik" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/settingBtn"
             android:layout_width="0dp"
             android:layout_height="60dp"
             android:layout_weight="1"
-            android:text="Setting"
-            android:backgroundTint="@android:color/background_light" />
+            android:backgroundTint="@android:color/background_light"
+            android:text="Setting" />
     </LinearLayout>
 
     <!-- Tombol Logout -->

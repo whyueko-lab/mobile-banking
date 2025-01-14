@@ -1,4 +1,4 @@
-package com.example.oopm9;
+package com.example.mobilebanking_wahyu_eko_suroso_411222044;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.oopm9.R;
 
 public class Login extends AppCompatActivity {
 
@@ -42,6 +44,8 @@ public class Login extends AppCompatActivity {
         try {
             validateCredentials(username, password);
             Toast.makeText(this, "Login Berhasil", Toast.LENGTH_SHORT).show();
+            intentInt = new Intent(Login.this, MainActivity.class);
+            startActivity(intentInt);
         } catch (InvalidCredentialsException e) {
             Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
@@ -53,7 +57,7 @@ public class Login extends AppCompatActivity {
         if (username.isEmpty() || password.isEmpty()) {
             throw new InvalidCredentialsException("Username atau Password tidak boleh kosong!");
         }
-        if (!username.equals("admin") || !password.equals("12345")) {
+        if (!username.equals("wahyu") || !password.equals("12345")) {
             throw new InvalidCredentialsException("Username atau Password salah!");
         }
     }

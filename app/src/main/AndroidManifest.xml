@@ -4,29 +4,25 @@
 
     <application
         android:allowBackup="true"
-        android:dataExtractionRules="@xml/data_extraction_rules"
-        android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
-        android:label="Aplikasi Wahyu"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/Theme.OOPM9"
-        tools:targetApi="31">
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light">
+
+        <!-- LoginActivity sebagai Activity pertama yang dijalankan -->
         <activity
-            android:name=".MainActivity"
-            android:allowEmbedded="true"
+            android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-       <activity android:name=".ConstructorActivity"/>
-        <activity android:name=".Decision"/>
-        <activity android:name=".ListActivity"/>
-        <activity android:name=".Login"/>
-        <activity android:name=".LuasActivity"/>
-        <activity android:name=".Matematika"/>
+
+        <!-- MainActivity yang akan dijalankan setelah login berhasil -->
+        <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.MainActivity" android:exported="false" />
+        <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.MyCard" android:exported="false"/>
+        <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.Statistik" android:exported="false"/>
+        <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.Setting" android:exported="false"/>
 
     </application>
 
