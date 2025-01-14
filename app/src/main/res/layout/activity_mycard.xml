@@ -12,12 +12,10 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    <!-- LinearLayout untuk tombol menu utama -->
+    <!-- Space untuk mendorong konten ke atas -->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginBottom="0dp"
-        android:elevation="1dp"
+        android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:weightSum="4">
@@ -25,34 +23,75 @@
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/homeBtn"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="Home"
+            android:textSize="16sp"
+            android:autoLink="none"
             android:backgroundTint="@android:color/background_light"
-            android:text="Home" />
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp"
+            android:background="@drawable/button_selector" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/mycardBtn"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/background_light"
-            android:text="My Card" />
+            android:text="My Card"
+            android:textSize="16sp"
+            android:autoLink="none"
+            android:background="@drawable/button_selector"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/statistikBtn"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/background_light"
-            android:text="Statistik" />
+            android:text="Statistik"
+            android:textSize="16sp"
+            android:autoLink="none"
+            android:background="@drawable/button_selector"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/settingBtn"
             android:layout_width="0dp"
-            android:layout_height="60dp"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:backgroundTint="@android:color/background_light"
-            android:text="Setting" />
+            android:text="Setting"
+            android:textSize="16sp"
+            android:autoLink="none"
+            android:background="@drawable/button_selector"
+            android:ellipsize="end"
+            android:includeFontPadding="false"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:autoSizeTextType="uniform"
+            android:autoSizeMinTextSize="10sp"
+            android:autoSizeMaxTextSize="20sp"
+            android:autoSizeStepGranularity="2sp" />
     </LinearLayout>
 
     <!-- Tombol Logout -->

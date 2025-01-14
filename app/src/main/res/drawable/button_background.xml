@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item>
-        <shape android:shape="rectangle">
-            <gradient
-                android:startColor="#FFFFFF"
-                android:endColor="#E0E0E0"
-                android:angle="90" /> <!-- Menambahkan atribut angle untuk arah gradien -->
-            <corners android:radius="12dp"/>
-        </shape>
-    </item>
-</layer-list>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient
+        android:startColor="#FFFFFF"
+        android:endColor="#4CAF50"
+        android:angle="90" />
+    <corners android:radius="12dp"/>
+</shape>

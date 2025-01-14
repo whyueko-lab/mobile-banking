@@ -29,9 +29,10 @@ public class MainActivity extends AppCompatActivity {
         home.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, MainActivity.class);  // Ganti dengan class tujuan yang benar
+                Intent intent = new Intent(MainActivity.this, MainActivity.class);
+                home.setSelected(true);
                 intent.putExtra("KEY_NAME", "Hello from MainActivity!");
-                startActivity(intent);
+                startActivity(intent);;
             }
         });
         // Tombol MyCard
