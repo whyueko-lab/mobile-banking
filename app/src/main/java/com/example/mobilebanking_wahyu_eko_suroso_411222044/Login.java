@@ -13,22 +13,31 @@ import com.example.oopm9.R;
 
 public class Login extends AppCompatActivity {
 
-
     private EditText usernameEditText, passwordEditText;
-
-    private Button loginButton;
-
-    Intent intentInt;
+    private Button loginButton, forgotPasswordButton;
+    private Intent intentInt;
 
     @Override
     protected void onCreate(Bundle saveInstanceState) {
         super.onCreate(saveInstanceState);
-        setContentView(R.layout.login);
+        setContentView(R.layout.login); // Make sure the layout name is correct
 
         usernameEditText = findViewById(R.id.usernameEditText);
         passwordEditText = findViewById(R.id.passwordEditText);
         loginButton = findViewById(R.id.loginButton);
+        forgotPasswordButton = findViewById(R.id.forgotPasswordButton);
 
+        // Handle forgot password button click
+        forgotPasswordButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Correct the context reference here
+                intentInt = new Intent(Login.this, ForgotPasswordActivity.class);
+                startActivity(intentInt);
+            }
+        });
+
+        // Handle login button click
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +58,7 @@ public class Login extends AppCompatActivity {
         } catch (InvalidCredentialsException e) {
             Toast.makeText(Login.this, e.getMessage(), Toast.LENGTH_SHORT).show();
         } catch (Exception e) {
-            Toast.makeText(this, "Terjadi Kesalahan:" + e.getMessage(), Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Terjadi Kesalahan: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 

@@ -9,7 +9,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height   ="0dp"
+        android:layout_height="0dp"
         android:layout_weight="1" />
 
     <EditText
@@ -17,10 +17,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Username"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/button_background"
         android:padding="12dp"
         android:textColorHint="#808080"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="10dp"
         android:layout_marginTop="16dp" />
 
     <EditText
@@ -28,24 +28,33 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:background="@drawable/button_selector"
+        android:background="@drawable/button_background"
         android:inputType="textPassword"
         android:padding="12dp"
         android:textColorHint="#808080"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/forgotPasswordButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lupa Password?"
+        android:background="@android:color/transparent"
+        android:textColor="#0000FF"
+        android:layout_gravity="end"
+        android:layout_marginBottom="1dp" />
 
     <Button
         android:id="@+id/loginButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:text="Login"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="109dp"
-        android:background="@drawable/button_selector"/>
+        android:background="@drawable/button_selector"
+        android:layout_marginBottom="10dp" />
 
     <Button
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:backgroundTint="#17DB01"
         android:hint="by Wahyu Eko Suroso 411222044" />
 

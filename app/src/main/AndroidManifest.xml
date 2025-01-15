@@ -23,6 +23,7 @@
         <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.MyCard" android:exported="false"/>
         <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.Statistik" android:exported="false"/>
         <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.Setting" android:exported="false"/>
+        <activity android:name="com.example.mobilebanking_wahyu_eko_suroso_411222044.ForgotPasswordActivity" android:exported="false"/>
 
     </application>
 

@@ -16,7 +16,7 @@ public class MyCard extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(com.example.oopm9.R.layout.activity_mycard);
+        setContentView(R.layout.activity_mycard);
 
         // Hubungkan tombol Home dari layout
         home = findViewById(R.id.homeBtn);
@@ -34,7 +34,7 @@ public class MyCard extends AppCompatActivity {
         statistik.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MyCard.this, MainActivity.class);
+                Intent intent = new Intent(MyCard.this, Statistik.class);
                 startActivity(intent);
                 finish();
             }
